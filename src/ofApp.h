@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxOpenCv.h"
 
 #include "ofxKCore.h"
 
@@ -40,6 +41,8 @@ class ofApp : public ofBaseApp {
     ofxCvGrayscaleImage grayImage;       // grayscale depth image
     ofxCvGrayscaleImage grayThreshNear;  // the near thresholded image
     ofxCvGrayscaleImage grayThreshFar;   // the far thresholded image
+    ofPoint srcPoints[4];
+    ofPoint dstPoints[4];
     
     ofxCvGrayscaleImage sourceImg;
     CPUImageFilter processedImg;         // image after filters

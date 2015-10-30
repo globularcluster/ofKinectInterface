@@ -1,5 +1,5 @@
-ofxGui
 ofxKCore
+ofxGui
 ofxKinect
 ofxNetwork
 ofxOpenCv
