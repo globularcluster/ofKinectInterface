@@ -52,6 +52,12 @@ void ofApp::setup() {
 	// zero the tilt on startup
 	angle = 0;
 	kinect.setCameraTiltAngle(angle);
+
+	//GUI
+	testeGroup.setup();
+	parametersGroup.add(testeGroup.guiParameters);
+	parametersGroup.add(testeGroup.outrosParameters);
+	gui.setup(parametersGroup);
 }
 
 //--------------------------------------------------------------
@@ -214,6 +220,9 @@ void ofApp::draw() {
 	}
 
 	// ofDrawBitmapString(reportStream.str(), 20, 360);
+
+	gui.draw();
+
 }
 
 void ofApp::exit() {

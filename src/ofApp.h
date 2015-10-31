@@ -1,9 +1,13 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxGui.h"
+
 #include "ofxOpenCv.h"
 
 #include "ofxKCore.h"
+
+#include "testeGui.h"
 
 #define MAIN_WINDOW_WIDTH 320.0f
 #define MAIN_WINDOW_HEIGHT 280.0f
@@ -80,4 +84,10 @@ class ofApp : public ofBaseApp {
 
     bool bDrawOutlines;
     bool bShowLabels;
+
+    // GUI
+    ofxPanel gui;
+	ofParameterGroup parametersGroup;
+    testeGui testeGroup;
+
 };
